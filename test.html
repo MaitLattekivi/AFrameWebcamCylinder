@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebcamCurve</title>
+    <meta name="description" content="Video - A-Frame">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+</head>
+<body>
+
+
+
+<a-scene>
+
+    <a-assets>
+        <video id="webcam" playsinline
+               crossorigin="anonymous"></video>
+    </a-assets>
+
+    <!-- https://stefie.github.io/aframe-curvedimage-calculator/ this for help -->
+    <a-cylinder position="0 1.6 0"
+                radius="0.9"
+                height="1.5"
+                material="src: #webcam; side: double"
+                open-ended="true"
+                theta-start="120"
+                theta-length="120"
+
+    ></a-cylinder>
+
+
+
+</a-scene>
+
+<script>
+    navigator.mediaDevices.getUserMedia({audio: false, video: true})
+        .then(stream => {
+            let $video = document.querySelector('video')
+            $video.srcObject = stream
+            $video.onloadedmetadata = () => {
+                $video.play()
+            }
+        })
+
+</script>
+
+</body>
+</html>
