@@ -14,13 +14,21 @@
 <a-scene>
 
     <a-assets>
-        <video id="webcam" playsinline
-               crossorigin="anonymous"></video>
+        <video id="webcam" playsinline crossorigin="anonymous"></video>
     </a-assets>
 
+    <a-assets>
+        <a-asset-item id="steering_wheel_vr" src="rool.glb"></a-asset-item>
+    </a-assets>
+
+
+    <a-entity camera look-controls positon="0 0 -1" ></a-entity>
+
+    <a-entity gltf-model="#steering_wheel_vr" position="0 -0.5 -1"></a-entity>
+
+
     <!-- https://stefie.github.io/aframe-curvedimage-calculator/ this for help -->
-    <a-cylinder position="0 1.6 0"
-                radius="0.9"
+    <a-cylinder radius="0.9"
                 height="1.5"
                 material="src: #webcam; side: double"
                 open-ended="true"
@@ -29,7 +37,8 @@
 
     ></a-cylinder>
 
-
+    <a-entity id="leftHand" hand-tracking-controls="hand: left;"></a-entity>
+    <a-entity id="rightHand" hand-tracking-controls="hand: right;"></a-entity>
 
 </a-scene>
 
@@ -42,6 +51,8 @@
                 $video.play()
             }
         })
+
+
 
 </script>
 
