@@ -14,11 +14,11 @@
 <a-scene>
 
     <a-assets>
-        <video id="webcam" playsinline crossorigin="anonymous"></video>
+        <video id="webcam" autoplay preload="auto" crossorigin="anonymous" loop="true" src="https://192.168.137.55:8080/video.mp4"></video>
     </a-assets>
 
     <a-assets>
-        <a-asset-item id="steering_wheel_vr" src="rool.glb"></a-asset-item>
+        <a-asset-item id="steering_wheel_vr" src="https://192.168.137.55:8080/1.glb"></a-asset-item>
     </a-assets>
 
 
@@ -43,15 +43,6 @@
 </a-scene>
 
 <script>
-    navigator.mediaDevices.getUserMedia({audio: false, video: true})
-        .then(stream => {
-            let $video = document.querySelector('video')
-            $video.srcObject = stream
-            $video.onloadedmetadata = () => {
-                $video.play()
-            }
-        })
-
 
 
 </script>

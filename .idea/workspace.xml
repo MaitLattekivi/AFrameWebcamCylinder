@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2dff61c-df38-4437-980f-e237df3fc29d" name="Default Changelist" comment="">
+    <list default="true" id="b2dff61c-df38-4437-980f-e237df3fc29d" name="Default Changelist" comment="added wheel">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +39,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -32,16 +58,50 @@
       <option name="presentableId" value="Default" />
       <updated>1616747690603</updated>
       <workItem from="1616747691716" duration="12073000" />
+      <workItem from="1616948598850" duration="6381000" />
+      <workItem from="1617002770736" duration="5561000" />
     </task>
+    <task id="LOCAL-00001" summary="added wheel">
+      <created>1616948714523</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616948714523</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added wheel" />
+    <option name="LAST_COMMIT_MESSAGE" value="added wheel" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="2332" y="347" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1616949891152">
+      <screen x="1920" y="54" width="1280" height="984" />
+    </state>
+    <state x="2332" y="347" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.54.1280.984@1920.54.1280.984" timestamp="1616949891152" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1616747777270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.54.1280.984@0.0.1920.1040" timestamp="1616747777270" />
+    <state x="2152" y="278" key="Vcs.Push.Dialog.v2" timestamp="1616948719697">
+      <screen x="1920" y="54" width="1280" height="984" />
+    </state>
+    <state x="2152" y="278" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.54.1280.984@1920.54.1280.984" timestamp="1616948719697" />
   </component>
 </project>
