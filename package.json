@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MaitLattekivi/AFrameWebcamCylinder#readme",
   "dependencies": {
+    "http-server": "^0.12.3",
     "https-localhost": "^4.6.4",
     "serve": "^11.3.2"
   }

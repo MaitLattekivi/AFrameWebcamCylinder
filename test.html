@@ -5,26 +5,82 @@
     <title>WebcamCurve</title>
     <meta name="description" content="Video - A-Frame">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.2.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@^3.0.1/dist/super-hands.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.1.1/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras/dist/aframe-physics-extras.min.js"></script>
 
+
+    <script>
+
+
+
+        AFRAME.registerComponent('turnWheel', {
+
+            init: function () {
+                var el = this.el;
+            },
+
+            update: function (oldData) {
+                var currentPosL = document.getElementById('leftHand').object3D.position;
+                var currentPosR = document.getElementById('rightHand').object3D.position;
+
+
+                console.log(currentPosL);
+                console.log(currentPosR);
+
+                var angleDeltaDegrees = (Math.atan2(newRelativeHandPosition.z, newRelativeHandPosition.x)
+                    - Math.atan2(relativeHandPosition.z, relativeHandPosition.x)) * (180 / Math.PI);
+
+
+                this.el.setAttribute('rotation', {x: 0, y: 0, z: angleDeltaDegrees})
+
+                console.log(angleDeltaDegrees);
+
+
+            },
+
+        });
+
+    </script>
 </head>
 <body>
 
 
-
-<a-scene>
+<a-scene
+        background="color: #212"
+        webxr="referenceSpaceType: local"
+        environment
+        cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable">
 
     <a-assets>
-        <video id="webcam" autoplay preload="auto" crossorigin="anonymous" loop="true" src="https://192.168.137.55:8080/video.mp4"></video>
+        <video id="webcam" autoplay preload="auto" crossorigin="anonymous" loop="true"
+               src="https://127.0.0.1:8080/video.mp4"></video>
+        <a-asset-item id="steering_wheel_vr" src="https://127.0.0.1:8080/wheel.glb"></a-asset-item>
+
     </a-assets>
 
-    <a-assets>
-        <a-asset-item id="steering_wheel_vr" src="https://192.168.137.55:8080/1.glb"></a-asset-item>
-    </a-assets>
+    <a-entity id="leftHand" sphere-collider="objects: .steering" super-hands hand-controls="hand: left"></a-entity>
+    <a-entity id="rightHand" sphere-collider="objects: .steering" super-hands hand-controls="hand: right"></a-entity>
+
+    <a-entity
+            id="background"
+            position="0 0 0"
+            geometry="primitive: sphere; radius: 2.0"
+            material="color: red; side: back; shader: flat"
+            scale="0.001 0.001 0.001"
+            visible="false" class="raycastable">
+    </a-entity>
 
 
-    <a-entity camera look-controls positon="0 0 -1" ></a-entity>
+    <a-entity camera look-controls position="0 1 0"></a-entity>
 
-    <a-entity gltf-model="#steering_wheel_vr" position="0 -0.5 -1"></a-entity>
+    <a-entity class="steering" gltf-model="#steering_wheel_vr" static-body clickable position="0 1.2 -0.5"
+              turnWheel ondragend="this.setAttribute('rotation', {x: 0, y: 0, z: 50})">
+
+    </a-entity>
 
 
     <!-- https://stefie.github.io/aframe-curvedimage-calculator/ this for help -->
@@ -34,18 +90,12 @@
                 open-ended="true"
                 theta-start="120"
                 theta-length="120"
+                position="0 1.5 0">
+    </a-cylinder>
 
-    ></a-cylinder>
-
-    <a-entity id="leftHand" hand-tracking-controls="hand: left;"></a-entity>
-    <a-entity id="rightHand" hand-tracking-controls="hand: right;"></a-entity>
 
 </a-scene>
 
-<script>
-
-
-</script>
 
 </body>
 </html>
