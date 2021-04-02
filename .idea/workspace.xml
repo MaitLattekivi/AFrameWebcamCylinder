@@ -10,32 +10,18 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+    </expand>
+    <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-    </expand>
-    <select />
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2dff61c-df38-4437-980f-e237df3fc29d" name="Default Changelist" comment="added wheel">
-      <change afterPath="$PROJECT_DIR$/responciveut.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AFrameWebcamCylinder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AFrameWebcamCylinder.iml" afterDir="false" />
+    <list default="true" id="b2dff61c-df38-4437-980f-e237df3fc29d" name="Default Changelist" comment="added firebase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cert.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains.ext" beforeDir="false" afterPath="$PROJECT_DIR$/domains.ext" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/key.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/võtm,ed/RootCA.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/võtm,ed/RootCA.key" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/võtm,ed/RootCA.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/võtm,ed/RootCA.srl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/võtm,ed/localhost.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/võtm,ed/localhost.csr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/võtm,ed/localhost.key" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +64,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -93,6 +79,7 @@
       <workItem from="1616948598850" duration="6381000" />
       <workItem from="1617002770736" duration="5561000" />
       <workItem from="1617055544373" duration="23800000" />
+      <workItem from="1617268550969" duration="1856000" />
     </task>
     <task id="LOCAL-00001" summary="added wheel">
       <created>1616948714523</created>
@@ -101,7 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616948714523</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added video instead of webcam">
+      <created>1617046353917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617046353917</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added video instead of webcam">
+      <created>1617047492977</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617047492977</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +113,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -122,5 +135,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added wheel" />
     <option name="LAST_COMMIT_MESSAGE" value="added wheel" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2266" y="347" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617274951010">
+      <screen x="1920" y="54" width="1280" height="984" />
+    </state>
+    <state x="2266" y="347" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.54.1280.984@1920.54.1280.984" timestamp="1617274951010" />
+    <state x="2061" y="193" width="998" height="708" key="SettingsEditor" timestamp="1617115870400">
+      <screen x="1920" y="54" width="1280" height="984" />
+    </state>
+    <state x="2061" y="193" width="998" height="708" key="SettingsEditor/0.0.1920.1040/1920.54.1280.984@1920.54.1280.984" timestamp="1617115870400" />
   </component>
 </project>
