@@ -20,9 +20,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2dff61c-df38-4437-980f-e237df3fc29d" name="Default Changelist" comment="added firebase">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b2dff61c-df38-4437-980f-e237df3fc29d" name="Default Changelist" comment="added firebase" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617047492977</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added firebase">
+      <created>1617340108358</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617340108358</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +139,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added wheel" />
-    <option name="LAST_COMMIT_MESSAGE" value="added wheel" />
+    <MESSAGE value="added firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="added firebase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2266" y="347" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617274951010">
